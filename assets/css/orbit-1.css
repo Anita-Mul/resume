@@ -8,7 +8,7 @@
 */
 body {
   font-family: "Roboto", sans-serif;
-  color: #545E6C;
+  color: #4d5662;
   background: rgb(53, 71, 82);
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #2d7788;
+  color: #1e5a68;
   text-decoration: none;
 }
 a:hover {
@@ -50,9 +50,9 @@ p {
 }
 
 .sidebar-wrapper {
-  background: #e6e6e6ef;
+  /* background: #e6e6e6ef; */
   border-radius: 10px 10px 0 0;
-  /* background: rgb(48, 57, 61); */
+  background: rgba(205, 210, 213);
   position: absolute;
   left: 0;
   width: 240px;
@@ -100,7 +100,7 @@ p {
 }
 
 .sidebar-wrapper .slice-container {
-  background-color: #e6e6e6ef;
+  /* background-color: #e6e6e6ef; */
   height: 10px;
 }
 .sidebar-wrapper .profile {
@@ -183,7 +183,8 @@ p {
 
 
 .main-wrapper {
-  background: #e6e6e6ef;
+  background: rgba(205, 210, 213);
+  /* background: #e6e6e6ef; */
   /* padding: 60px; */
   margin-left: 240px;
   padding: 60px;
@@ -198,7 +199,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #2d7788;
+  color: #21424a;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -213,7 +214,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2d7788;
+  background: #1e5a68;
   text-align: center;
   font-size: 16px;
   position: relative;
@@ -245,11 +246,11 @@ p {
   position: absolute;
   right: 0;
   top: 0;
-  color: #97AAC3;
+  color: #8993a0;
 }
 .main-wrapper .company {
   margin-bottom: 10px;
-  color: #97AAC3;
+  color: #8993a0;
 }
 .main-wrapper .project-title {
   font-size: 16px;
@@ -282,7 +283,7 @@ p {
   background-clip: padding-box;
 }
 .skillset .theme-progress-bar {
-  background: #68bacd;
+  background: #658f99;
 }
 
 .footer {
