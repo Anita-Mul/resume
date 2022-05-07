@@ -70,7 +70,7 @@ p {
   /* background: rgba(0, 0, 0, 0.9); */
   background-color: #203744;
   border-radius: 10px 0 30px 0;
-  height: 240px;
+  height: 260px;
   text-align: left;
   color: #fff;
   display: flex;
@@ -175,7 +175,7 @@ p {
   border-radius: 10px 10px 0 0;
   text-align: left;
   color: rgba(255, 255, 255, 0.8);
-  height: 100px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -315,6 +315,7 @@ p {
   .sidebar-wrapper .profile-container {
     margin-top: 80px;
     border-radius: 0px 0px 30px 30px;
+    height: 240px;
   }
 
   .sidebar-wrapper .contact-container {
@@ -342,7 +343,7 @@ p {
     border-radius: 30px 30px 0 0;
     text-align: left;
     color: rgba(255, 255, 255, 0.8);
-    height: 100px;
+    height: 90px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -354,6 +355,7 @@ p {
     top: 340px;
     padding: 30px;
     margin-left: 0;
+    border-radius: 30px 30px 0px 0px;
     /* background-color: rebeccapurple; */
   }
 
