@@ -52,7 +52,7 @@ p {
 .sidebar-wrapper {
   /* background: #e6e6e6ef; */
   border-radius: 20px 10px 0 0;
-  background: rgb(226, 232, 234);
+  background: rgb(238, 241, 241);
   position: absolute;
   left: 0;
   width: 240px;
@@ -185,7 +185,7 @@ p {
 
 
 .main-wrapper {
-  background: rgb(226, 232, 234);
+  background: rgb(238, 241, 241);
   /* background: #e6e6e6ef; */
   /* padding: 60px; */
   margin-left: 240px;
