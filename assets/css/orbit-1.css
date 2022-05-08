@@ -45,7 +45,7 @@ p {
   margin: 0 auto;
   position: relative;
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 
 }
 
