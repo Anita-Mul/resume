@@ -87,7 +87,15 @@
                     </div><!--//meta-->
                     <div class="details">
                         <ul>
-                            <li>jj</li>
+                            <li>使用 <b>mobx</b> 进行用户数据和全局数据的状态管理；封装了 <b>react-native-async-storage</b> 进行用户数据的持久化存储。</li>
+                            <li>封装 <b>axios</b>；在请求拦截器中添加 <b>Token</b>，并使用 <b>AsyncStorage</b> 进行响应结果的缓存处理。</li>
+                            <li>封装 <b>react-navigation</b> 常用操作。</li>
+                            <li>封装常用的 <b>flex</b> 布局。</li>
+                            <li>实现登录注册页面的渲染和相关的逻辑处理。</li>
+                            <li>实现设计师人气榜单页面，使用 <b>DeviceEventEmitter</b> 处理关注/取关某人时页面信息的同步。</li>
+                            <li>实现电子书阅读器；在 <b>H5</b> 页面中封装 <b>epub.js</b> 进行电子书的显示和翻阅操作，使用 <b>react-native-webview</b> 进行 <b>RN</b> 页面和 <b>H5</b> 页面的通信，在 <b>RN</b> 页面中进行目录的跳转功能。</li>
+                            <li>使用 <b>react-native-splash-screen</b> 实现启动屏；提高首屏加载速度。</li>
+                            <li>使用 <b>git</b> 进行团队协同开发。</li>
                         </ul>
                     </div><!--//details-->
                 </div><!--//item-->
@@ -95,12 +103,35 @@
             
             <section class="section projects-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fas fa-archive"></i></span>项目经验</h2>
+                
+                
                 <div class="upper-row">
                     <h6 class="level-title">餐饮后台管理系统</h6>
                     <div class="time">2021.03 - 2022.04</div>
                 </div><!--//upper-row-->
                 <a href="https://github.com/Anita-Mul/muduo" target="_blank"><div class="company">项目Github地址</div></a>
                 <br>
+                <ul>
+                    <li>
+                        使用 MVC 模式作为项目整体的设计思路。接口的定义符合 RESTful 规范。
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        配置 babel 转码器，将ES6代码转化成ES5；跨域
+                    </li>
+                    <li>
+                        能够使用 <b>log4j</b> 搭建全链路日志; 使用 <b>Nodemailer、ioredis</b> 等解决告警轰炸问题。
+                    </li>
+                    <li>
+                        在阿里云服务器部署项目；使用 <b>pm2</b> 管理 node 进程，记录日志；使用 <b>nginx</b> 实现反向代理；使用阿里云 Node.js 性能平台进行性能监控。
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+
 
 
                 <div class="upper-row">
@@ -124,7 +155,7 @@
                                 熟悉 <b>HTML / CSS / DOM / DOM / ECMAScript</b> 能够编写语义化的 <b>HTML</b>，模块化的 <b>CSS</b>。
                             </li>
                             <li>
-                                了解 <b>React/ReactNative</b> 框架，有移动端的开发经验。熟练运用 <b>axios</b> 等插件的使用。
+                                了解 <b>React / ReactNative</b> 框架，有移动端的开发经验。熟悉 <b>axios</b> 等插件的使用。
                             </li>
                         </ul>                           
                     </div><!--//item-->
@@ -142,12 +173,7 @@
                             <li>
                                 使用 <b>socket.io</b> 编写过简单的<a href="https://github.com/Anita-Mul/ChatRoom" style="color: #8ca4c5;" target="_blank"> 聊天室</a>；编写过简单的 <b>DNS</b> 服务器；编写过使用 <b>有限状态机</b> 且符合 <b>RESTful</b> 规范的<a href="https://github.com/Anita-Mul/HTTP-Server" style="color: #8ca4c5;" target="_blank"> HTTPServer</a>。
                             </li>
-                            <li>
-                                能够使用 <b>log4j</b> 搭建全链路日志; 使用 <b>Nodemailer、ioredis</b> 等解决告警轰炸问题。
-                            </li>
-                            <li>
-                                在阿里云服务器部署过项目；使用 <b>pm2</b> 管理 node 进程，记录日志；使用 <b>nginx</b> 实现反向代理；使用阿里云 Node.js 性能平台进行性能监控。
-                            </li>
+                            <li>能够利用 <b>Chrome DevTools、VsCode</b> 调试 Node.js 代码；使用 <b>ab</b> 进行压力测试。</li>。
                             <li>
                                 阅读过 <a href="https://github.com/Anita-Mul/Libuv-Analyse" style="color: #8ca4c5;" target="_blank"> <b>Libuv</b></a> 网络库源码；了解常用 <b>并发网络服务</b> 的设计方案，了解 <b>Reactor</b> 事件处理模式；熟悉 Libuv 的并发模型 —— <b>reactor + threadpool</b>；熟悉 Libuv 中 <b>queue</b> 等数据结构的设计方法；熟悉 Libuv 中三大核心事件（<b>IO事件、信号、定时事件</b>）的处理过程；熟悉 Libuv 中<b>线程池</b>的设计方法及和主线程间的 <b>通信机制</b>；熟悉 Libuv 中 <b>TCP</b> 的处理过程。
                             </li>
@@ -182,7 +208,7 @@
                         <br> 
                         <ul>
                             <li>具备基本的 <b>Web</b> 安全知识（ <b>XSS / CSRF</b> 等）</li> 
-                            <li>了解 HTTP（1.1 / 2 / 3）、UDP 等协议</li> 
+                            <li>了解 <b>HTTP（1.1 / 2 / 3）</b>、<b>UDP</b> 等协议</li> 
                             <li>能够使用 <b>Markdown</b> 编写得体的文档，具备良好的技术交流能力</li> 
                             <li>日常使用 <b>Git</b> 与 <b>VSCode</b> 进行开发，了解 <b>Vim</b>，也乐于尝试新工具</li>       
                         </ul>            
