@@ -39,7 +39,7 @@
                     <li class="phone"><i class="fas fa-phone"></i><a href="tel:19934966219">19934966219</a></li>
                     <li class="github"><i class="fab fa-github"></i><a href="https://github.com/Anita-Mul" target="_blank">github.com/Anita-Sun</a></li>
                     <li class="website"><i class="fas fa-globe"></i><a href="https://blog.csdn.net/AnitaSun?type=blog" target="_blank">blog.csdn.net/AnitaSun</a></li>
-                    <li class="website"><i class="fas fa-globe"></i><a href="https://anita-mul.github.io/" target="_blank">anita-mul.github.io</a></li>
+                    <!-- <li class="website"><i class="fas fa-globe"></i><a href="https://anita-mul.github.io/" target="_blank">anita-mul.github.io</a></li> -->
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container">
@@ -88,12 +88,12 @@
                     <div class="details">
                         <ul>
                             <li>使用 <b>mobx</b> 进行用户数据和全局数据的状态管理；封装了 <b>react-native-async-storage</b> 进行用户数据的持久化存储。</li>
-                            <li>封装 <b>axios</b>；在请求拦截器中添加 <b>Token</b>，并使用 <b>AsyncStorage</b> 进行响应结果的缓存处理。</li>
+                            <li>封装 <b>axios</b>；使用 <b>AsyncStorage</b> 进行响应结果的缓存处理。</li>
                             <li>封装 <b>react-navigation</b> 常用操作。</li>
                             <li>封装常用的 <b>flex</b> 布局。</li>
                             <li>实现登录注册页面的渲染和相关的逻辑处理。</li>
-                            <li>实现设计师人气榜单页面，使用 <b>DeviceEventEmitter</b> 处理关注/取关某人时页面信息的同步。</li>
-                            <li>实现电子书阅读器；在 <b>H5</b> 页面中封装 <b>epub.js</b> 进行电子书的显示和翻阅操作，使用 <b>react-native-webview</b> 进行 <b>RN</b> 页面和 <b>H5</b> 页面的通信，在 <b>RN</b> 页面中进行目录的跳转功能。</li>
+                            <li>实现设计师人气榜单页面，使用 <b>DeviceEventEmitter</b> 解决关注/取关某人时页面信息的同步问题。</li>
+                            <li>实现电子书阅读器；相关 <b>npm</b> 包无法使用，通过在 <b>H5</b> 页面中封装 <b>epub.js</b> ，使用 <b>react-native-webview</b> 进行 <b>RN</b> 页面和 <b>H5</b> 页面的通信来解决。同时解决页面无法正常显示问题。</li>
                             <li>使用 <b>react-native-splash-screen</b> 实现启动屏；提高首屏加载速度。</li>
                             <li>使用 <b>git</b> 进行团队协同开发。</li>
                         </ul>
@@ -113,32 +113,37 @@
                 <br>
                 <ul>
                     <li>
-                        使用 MVC 模式作为项目整体的设计思路。接口的定义符合 RESTful 规范。
+                        使用 <b>MVC</b> 模式作为项目整体的设计思路。接口的定义符合 <b>RESTful</b> 规范。
                     </li>
                     <li>
-                        
+                        配置 <b>babel</b> 转码器；解决 <b>跨域</b> 问题。
                     </li>
                     <li>
-                        配置 babel 转码器，将ES6代码转化成ES5；跨域
+                        封装百度地图相关 <b>API</b> 作为 <b>地址操作的基类</b>；封装 <b>普通类基类</b>；
                     </li>
                     <li>
-                        能够使用 <b>log4j</b> 搭建全链路日志; 使用 <b>Nodemailer、ioredis</b> 等解决告警轰炸问题。
+                        使用 <b>log4j</b> 搭建 <b>全链路日志</b>; 使用 <b>Nodemailer、ioredis、ejs</b> 等解决 <b>告警轰炸</b> 问题。
                     </li>
                     <li>
-                        在阿里云服务器部署项目；使用 <b>pm2</b> 管理 node 进程，记录日志；使用 <b>nginx</b> 实现反向代理；使用阿里云 Node.js 性能平台进行性能监控。
-                    </li>
-                    <li>
-                        
+                        在阿里云服务器部署项目；使用 <b>pm2</b> 管理 <b>node</b> 进程，记录日志；使用 <b>nginx</b> 实现反向代理；使用阿里云 <b>Node.js</b> 性能平台进行性能监控。
                     </li>
                 </ul>
-
-
-
+                <br>
                 <div class="upper-row">
                     <h6 class="level-title">操作系统内核</h6>
                     <div class="time">2021.06 - 2021.09</div>
                 </div><!--//upper-row-->
                 <a href="https://github.com/Anita-Mul/muduo" target="_blank"><div class="company">项目Github地址</div></a>
+                <br>
+                <ul>
+                    <li>使用 <b>8086</b> 汇编语言编写 <b>MBR，loader.S</b>。实现 <b>GDT</b>、<b>实模式</b> 到 <b>保护模式</b> 的转换、创建 <b>页目录表、页表</b> 等操作。</li>
+                    <li><b>中断</b>：实现 <b>外部中断</b> 和 <b>系统调用</b> </li>
+                    <li><b>内存管理</b>：实现位图、内存池、arena等数据结构和相关操作；实现 <b>物理内存和虚拟内存管理</b>；实现 <b>堆内存管理</b> 及 <b>malloc，free</b> 系统调用。</li>
+                    <li><b>线程</b>：实现 <b>内核级线程</b> 及 <b>线程间同步</b> 相关操作</li>
+                    <li><b>进程</b>：实现 <b>用户进程</b> 及 <b>printf</b> 系统调用</li>
+                    <li>实现 <b>fork、wait、exit</b> 系统调用</li>
+
+                </ul>
             </section><!--//section-->
             
             <section class="skills-section section">
@@ -157,6 +162,12 @@
                             <li>
                                 了解 <b>React / ReactNative</b> 框架，有移动端的开发经验。熟悉 <b>axios</b> 等插件的使用。
                             </li>
+                            <li>
+                                了解 <b>DevTools</b> 中 <b>NetWork、LightHouse、Performance</b> 工具的使用。
+                            </li>
+                            <li>
+                                了解 <b>Javascript</b> 常用 <b>设计模式</b>。
+                            </li>
                         </ul>                           
                     </div><!--//item-->
 
@@ -168,14 +179,14 @@
                         <br>
                         <ul>
                             <li>
-                                能够使用 <b>Node.js API / Express</b> 搭建简单的后端程序与数据库（<b>MongoDB</b>）交互、渲染模板及提供 <b>RESTful API</b>。
+                                使用 <b>socket.io</b> 编写过简单的<a href="https://github.com/Anita-Mul/ChatRoom" style="color: #8ca4c5;" target="_blank"> 聊天室</a>；同时帮助群友解决频繁发送 <b>WebSocket</b> 请求导致的 <b>CPU</b> 使用率升高问题。
                             </li>
                             <li>
-                                使用 <b>socket.io</b> 编写过简单的<a href="https://github.com/Anita-Mul/ChatRoom" style="color: #8ca4c5;" target="_blank"> 聊天室</a>；编写过简单的 <b>DNS</b> 服务器；编写过使用 <b>有限状态机</b> 且符合 <b>RESTful</b> 规范的<a href="https://github.com/Anita-Mul/HTTP-Server" style="color: #8ca4c5;" target="_blank"> HTTPServer</a>。
+                                编写过使用 <b>有限状态机</b> 且符合 <b>RESTful</b> 规范的<a href="https://github.com/Anita-Mul/HTTP-Server" style="color: #8ca4c5;" target="_blank"> HTTPServer</a>。
                             </li>
-                            <li>能够利用 <b>Chrome DevTools、VsCode</b> 调试 Node.js 代码；使用 <b>ab</b> 进行压力测试。</li>。
+                            <li>能够使用 <b>Chrome DevTools、VsCode</b> 调试 <b>Node.js</b> 代码；使用 <b>ab</b> 进行压力测试。</li>
                             <li>
-                                阅读过 <a href="https://github.com/Anita-Mul/Libuv-Analyse" style="color: #8ca4c5;" target="_blank"> <b>Libuv</b></a> 网络库源码；了解常用 <b>并发网络服务</b> 的设计方案，了解 <b>Reactor</b> 事件处理模式；熟悉 Libuv 的并发模型 —— <b>reactor + threadpool</b>；熟悉 Libuv 中 <b>queue</b> 等数据结构的设计方法；熟悉 Libuv 中三大核心事件（<b>IO事件、信号、定时事件</b>）的处理过程；熟悉 Libuv 中<b>线程池</b>的设计方法及和主线程间的 <b>通信机制</b>；熟悉 Libuv 中 <b>TCP</b> 的处理过程。
+                                阅读过 <a href="https://github.com/Anita-Mul/Libuv-Analyse" style="color: #8ca4c5;" target="_blank"> <b>Libuv</b></a> 网络库源码；了解常用 <b>并发网络服务</b> 的设计方案，了解 <b>Reactor</b> 事件处理模式；熟悉 Libuv 的并发模型 —— <b>reactor + threadPool</b>；熟悉 Libuv 中三大核心事件（<b>IO事件、信号、定时事件</b>）的处理过程；熟悉 Libuv 中 <b>线程池</b> 的设计方法及和主线程间的 <b>通信机制</b>。
                             </li>
                         </ul>
                                                     
@@ -195,7 +206,7 @@
                                 熟悉 <b>TCP/IP</b> 网络协议，熟悉 <b>socket</b> 网络编程，了解 <b>多线程、多进程</b> 编程
                             </li>
                             <li>
-                                阅读过 <a href="https://github.com/Anita-Mul/muduo" style="color: #8ca4c5;" target="_blank"> <b>muduo</b></a> 网络库源码；熟悉 base 库中常用数据结构的实现（<b>Singleton、Thread、Mutex、Condition、CountDownLatch、BlockingQueue、BoundedBlockingQueue、ThreadPool、Logging</b>）；熟悉 net 库中 <b>计时器</b>、<b>缓冲区</b> 数据结构的实现；熟悉 muduo IO多路复用模型 —— <b>one loop per thread + threadPool</b> 的实现；熟悉 <b>TCP</b> 网络库服务端和客户端的实现。
+                                阅读过 <a href="https://github.com/Anita-Mul/muduo" style="color: #8ca4c5;" target="_blank"> <b>muduo</b></a> 网络库源码；了解 <b>base</b> 库中常用数据结构的实现；熟悉 <b>net</b> 库中 <b>计时器</b>、<b>缓冲区</b> 数据结构的实现和 <b>TCP 网络库服务端和客户端</b>的实现；熟悉 muduo 下的 IO 多路复用模型 —— <b>one loop per thread + threadPool</b> 的实现。
                             </li>
                         </ul>                               
                     </div><!--//item-->   
